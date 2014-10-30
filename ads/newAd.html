@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<head>
+	<script type= "text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/fileUpload.js"></script> 
+	<script type="text/javascript" src="js/ads.js"></script> 
+	
+	<script type="text/javascript" src="js/fieldValidation.js"></script> 
+	<link rel='stylesheet' type='text/css' href='css/ads.css'/>
+	<script type="text/javascript" src="http://ijuggernaut.co/adminpanel/loggedin/js/jquery.easy-pie-chart.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.0.0.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
+	<script src="http://cdn3.devexpress.com/jslib/13.2.5/js/dx.chartjs.js"></script>   
+	<script src="js/charts.js"></script>
+	  <!--[if lt IE 9]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
+	<!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+	<![endif]-->
+	<!--[if lt IE 7]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+	<![endif]-->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.dev.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script> 
+</head>
+<body>
+		<script>
+			$(document).ready(function(){
+				var cPassowrdKeeper = new passwordKeeper();
+				var isLoggedIn = cPassowrdKeeper.isLoggedIn();
+				if(!isLoggedIn)
+				{
+					//cPassowrdKeeper.showKeeper();
+				}
+				else
+				{
+					var email=localStorage.getItem("email");
+					var password=localStorage.getItem("password");
+					cPassowrdKeeper.manualLogin(email,password);
+				}
+			});
+			
+var passwordKeeper = function(){
+	this.username;
+	this.password;
+	this.name;
+	this.link = "http://combustionlaboratory.com/ads/php/combustionLogIn.php";
+	this.isLoggedIn = function()
+	{
+		var sEmail = localStorage.getItem("combustionemail") ;
+		if(!sEmail || sEmail == null || sEmail == "undefined")
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+		
+	}
+	
+	this.login = function(){
+		
+		var email = $("#signupemail").val();
+		var password = $("#loginpass").val();
+		
+		var obj = {
+			"email":email,
+			"password":password,
+		
+			}
+		var self = this;
+	 	 $.post( self.link, obj, function(data) {
+	
+				if(data.status=="one")
+				{
+					self.hideKeeper();
+					localStorage.setItem("combustionemail",email);
+					localStorage.setItem("password",password);
+				}
+				else
+				{
+					alert("Invalid Credentials");
+				}
+	
+		},"json");
+	
+	}
+
+
+	this.manualLogin = function(email,password){
+		
+		var obj = {
+		"email":email,
+		"password":password,
+		
+		}
+		
+		var self = this;
+	 	 $.post(self.link, obj, function(data) {
+	
+				if(data.status=="one")
+				{
+					self.hideKeeper();
+	
+				}
+				else
+				{
+					alert("Invalid Credentials");
+					self.showKeeper();
+					self.logout();
+				}
+	
+		},"json");
+	
+	}
+	
+	this.logout = function()
+	{
+		localStorage.clear();
+	}
+	
+	
+	this.showKeeper = function(){
+		var self = this;
+		if(!self.isLoggedIn())
+		{
+		   $("body").append("<div id='passwordkeeper'><input class='iblock' id='signupemail' type='text' placeholder='email'/><input class='iblock' type='password' id='loginpass' placeholder='password'/><div id='clicklogin'>Login</div>");
+		   $("#passwordkeeper").css({
+		 	  "position":"absolute",
+		  	 "height":"100%",
+		  	 "width":"100%",
+		  	 "z-index":"1000",
+			 "top":"0%",
+			 "left":"0%",
+		  	 "background-color":"rgba(0,0,0,0.9)",
+		   });
+		   $(".iblock,#clicklogin").css({
+		   	"display":"block",
+		   	"position":"relative",
+		   	"margin":"auto",
+		   	"width":"90%",
+		   	"max-width":"200px",
+		   	"height":"35px",
+		   	"margin-top":"10px",
+		   	"-webkit-appearance":"none",
+		   });
+		   
+		  $("#clicklogin").css({
+		  	"display":"block",
+		   	"position":"relative",
+		   	"margin":"auto",
+		   	"width":"90%",
+			"max-width":"200px",
+		   	"height":"35px",
+		   	"margin-top":"10px",
+		   	"line-height":"35px",
+		   	"text-align":"center",
+		   	"background-color":"#202020",
+		   	"color":"white",
+		   	"font-family":"helvetica",
+		  
+		  });
+		   
+		   
+		   
+		  $("#clicklogin").on("click",function(){
+		  		self.login();
+		  });
+		   
+		
+		}
+	
+	
+	
+	
+	}
+
+	this.hideKeeper = function(){
+		$("#passwordkeeper").remove();
+	
+	}
+
+}
+
+
+
+		</script>
+
+
+		<div id='wrapper'>
+		<div id='header'>Combustion Ad Panel</div>
+			<div id='content'>
+			
+				<form id="addcomment">
+					<div id="regp"><p style="margin:0;">New Banner for Combustion Ad Network</p>
+					<input type="text" class="inputClass" name="banner_desc" id="description" title="description" placeholder="Description"/></br>
+					<select type="text" class="banner_type" name="banner_type" id="type" title="type" placeholder="Select One">
+					  <option value="5">Select One</option>
+					  <option value="0">web</option>
+					  <option value="1">ios</option>
+					  <option value="2">android</option>
+					</select></br>
+					<input type="text" class="inputClass" name="banner_link" id="link" title="link" placeholder="Ad Link"/></br>
+					<input type="text" name="banner_image" id="pictureURL" title="Picture" placeholder="Image field will autoFill"/>
+				</form> 
+				<input type="file" id='aud' name="audio" placeholder="Picture"/><br>
+				<input type="button" name="submit" id="submit" value="Upload"/>
+				</div>
+				<script>
+				
+					$('#submit').on('click',function(e){//when submit button is clicked 
+						$('input[type=file]').upload('upload.php', function(res) {//ile upload takes place
+							$('#typePic').val('0');
+							
+							if(!inputValidation())
+							{
+								alert('Make sure all fields are correct');
+							}
+							else
+							{
+								if(!$('#aud').val()=="")//if tehre is no comment nothing gets sent back to the url field
+								{
+									var thisFile = "http://combustionlaboratory.com/ads/img/"+res.filename;
+									$('#pictureURL').val(thisFile);//reutrns the url of the image to put in the comment
+								}
+								$.post('http://combustionlaboratory.com/ads/php/addAd.php', $("#addcomment").serialize(),
+								function(data) {
+								});
+								alert("New ad was successfully uploaded");
+								document.getElementById('description').value='' ; 
+								document.getElementById('link').value='' ; 
+								document.getElementById('type').value='' ; 
+								document.getElementById('pictureURL').value='' ; 
+								document.getElementById('aud').value='' ; 
+								$('#type').val()=5;
+							}
+							//here because the data will be the res parameter. so make the php return an abject that contains the path name
+						}, 'json');
+					});
+					
+				</script>
+
+				<div id="divForTheCombustionAds" style='height:100px; width:640px;'></div><!--list-->
+				
+				<div class="title">Ads displayed per day</div>
+				<canvas id="newchart" width="1100" height="400"></canvas>
+				
+			`</div>
+			</div><!--content-->
+			
+		</div><!--wrapper-->
+
+
+
+</body>
+</body>
+</html>

@@ -1,0 +1,67 @@
+[17-Oct-2014 16:40:36 UTC] PHP Warning:  require(../../class/user.php): failed to open stream: No such file or directory in /home/dan/public_html/ads/php/combustionLogIn.php on line 3
+[17-Oct-2014 16:40:36 UTC] PHP Fatal error:  require(): Failed opening required '../../class/user.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/dan/public_html/ads/php/combustionLogIn.php on line 3
+[17-Oct-2014 16:41:27 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 43
+[17-Oct-2014 16:41:27 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 66
+[17-Oct-2014 16:41:33 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 43
+[17-Oct-2014 16:41:33 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 66
+[17-Oct-2014 16:41:33 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 43
+[17-Oct-2014 16:41:33 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 66
+[17-Oct-2014 16:41:34 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 43
+[17-Oct-2014 16:41:34 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 66
+[17-Oct-2014 16:41:34 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 43
+[17-Oct-2014 16:41:34 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 66
+[17-Oct-2014 16:41:34 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 43
+[17-Oct-2014 16:41:34 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 66
+[17-Oct-2014 16:42:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 43
+[17-Oct-2014 16:42:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 66
+[17-Oct-2014 16:57:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 43
+[17-Oct-2014 16:57:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 66
+[17-Oct-2014 16:57:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 43
+[17-Oct-2014 16:57:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 66
+[17-Oct-2014 16:57:53 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 43
+[17-Oct-2014 16:57:53 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 66
+[17-Oct-2014 16:57:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 43
+[17-Oct-2014 16:57:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 66
+[17-Oct-2014 16:57:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 43
+[17-Oct-2014 16:57:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 66
+[17-Oct-2014 16:58:43 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 43
+[17-Oct-2014 16:58:43 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 66
+[17-Oct-2014 16:59:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 44
+[17-Oct-2014 16:59:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/combustionUser.php on line 67
+[17-Oct-2014 18:58:03 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/dan/public_html/ads/php/ads.php on line 46
+[17-Oct-2014 19:30:53 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/dan/public_html/ads/php/getAds.php on line 7
+[18-Oct-2014 17:44:57 UTC] PHP Warning:  Missing argument 2 for ads::adWasClicked(), called in /home/dan/public_html/ads/php/adWasClicked.php on line 7 and defined in /home/dan/public_html/ads/php/ads.php on line 49
+[18-Oct-2014 17:46:12 UTC] PHP Warning:  Missing argument 2 for ads::adWasClicked(), called in /home/dan/public_html/ads/php/adWasClicked.php on line 7 and defined in /home/dan/public_html/ads/php/ads.php on line 49
+[18-Oct-2014 17:47:02 UTC] PHP Warning:  Missing argument 2 for ads::adWasClicked(), called in /home/dan/public_html/ads/php/adWasClicked.php on line 7 and defined in /home/dan/public_html/ads/php/ads.php on line 49
+[18-Oct-2014 17:49:53 UTC] PHP Warning:  Missing argument 2 for ads::adWasClicked(), called in /home/dan/public_html/ads/php/adWasClicked.php on line 7 and defined in /home/dan/public_html/ads/php/ads.php on line 49
+[18-Oct-2014 17:53:31 UTC] PHP Warning:  Missing argument 2 for ads::adWasClicked(), called in /home/dan/public_html/ads/php/adWasClicked.php on line 7 and defined in /home/dan/public_html/ads/php/ads.php on line 49
+[18-Oct-2014 17:56:48 UTC] PHP Warning:  Missing argument 2 for ads::adWasClicked(), called in /home/dan/public_html/ads/php/adWasClicked.php on line 7 and defined in /home/dan/public_html/ads/php/ads.php on line 49
+[20-Oct-2014 15:30:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 31
+[20-Oct-2014 15:30:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 31
+[20-Oct-2014 15:30:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 31
+[20-Oct-2014 15:30:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 31
+[20-Oct-2014 15:30:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 31
+[20-Oct-2014 15:30:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 31
+[20-Oct-2014 15:30:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 31
+[20-Oct-2014 15:30:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 31
+[20-Oct-2014 15:30:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 31
+[20-Oct-2014 15:30:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 31
+[20-Oct-2014 15:31:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 32
+[20-Oct-2014 15:31:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 32
+[20-Oct-2014 15:31:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 32
+[20-Oct-2014 15:31:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 32
+[20-Oct-2014 15:31:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 32
+[20-Oct-2014 15:31:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 32
+[20-Oct-2014 15:31:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 32
+[20-Oct-2014 15:31:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 32
+[20-Oct-2014 15:31:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 32
+[20-Oct-2014 15:31:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 32
+[20-Oct-2014 15:45:37 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/dan/public_html/ads/php/analytics.php on line 62
+[20-Oct-2014 15:46:06 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 74
+[20-Oct-2014 15:46:25 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/dan/public_html/ads/php/analytics.php on line 89
+[20-Oct-2014 15:46:32 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 74
+[20-Oct-2014 15:47:03 UTC] PHP Fatal error:  Class 'analytics' not found in /home/dan/public_html/ads/php/adsClickedTheMost.php on line 4
+[20-Oct-2014 15:50:25 UTC] PHP Fatal error:  Class 'analytics' not found in /home/dan/public_html/ads/php/adsClickedTheMost.php on line 4
+[20-Oct-2014 15:51:04 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 74
+[20-Oct-2014 15:51:09 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/dan/public_html/ads/php/analytics.php on line 74
+[21-Oct-2014 18:50:48 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/dan/public_html/ads/php/analytics.php on line 136
